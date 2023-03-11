@@ -3,9 +3,9 @@
 ## *Task specification*:
 
 - Image Classification
-- number of classes: 67
-- metric: imbalanced accuracy
-- total 15620 images
+- Number of classes: 67
+- Metric: balanced accuracy
+- Total 15620 images
 
 <br>
 
@@ -13,7 +13,7 @@
 
 ## *Approach*:
 - Framework: PyTorch
-- Pretained model used: ResNet-18
+- Model architecture used: ResNet-18
 - Optimizer: Adam
 
 <br>
