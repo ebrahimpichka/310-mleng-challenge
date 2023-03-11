@@ -36,9 +36,9 @@ The second task's solution notebook is located at `/task2-MLM/MLM_challenge.ipyn
 
 ---
 
-## **Task 3**
+## **Task 3 [**TODO**]**
 
-**TODO**
+
 
 1. Read [https://github.com/Shen-Lab/TALE](https://github.com/Shen-Lab/TALE) 
 2. Move the code to Pytorch 
