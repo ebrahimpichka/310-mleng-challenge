@@ -86,10 +86,16 @@ This function is used to train a PyTorch model on a given dataset using a specif
 ```
 #initialize the model, data loader, criterion and device
 model = MyModel()
-test_loader = DataLoader(test_data, batch_size=32, shuffle=True)
+train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
+test_loader = DataLoader(test_data, batch_size=32, shuffle=False)
 criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(model.parameters, lr=lr)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+writer = SummaryWriter()
 
-#evaluate the model on the test data
+epochs = 3
+
+#train and evaluate the model on the test data
+train(model, train_loader, val_loader, criterion, optimizer, epochs, device, chkp_path, writer)
 test(model, test_loader, criterion, device)
 ```
